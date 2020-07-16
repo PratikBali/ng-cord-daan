@@ -1,17 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-app>
+  <ion-header translucent>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>DAAN</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <ion-content fullscreen>
+    <section>
+      <ion-button size="large" shape="round" expand="block" (click)="uploadFile()">Send</ion-button>
+    </section>
+    <section>
+      <ion-button size="large" shape="round" expand="block">Receive</ion-button>
+    </section>
+  </ion-content>
+</ion-app>
